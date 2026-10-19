@@ -12,7 +12,6 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    border: 1px solid red; 
 }
 button {
     border: none;
