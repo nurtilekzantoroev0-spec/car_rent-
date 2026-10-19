@@ -1,0 +1,122 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Планшеты: до 991px ===== */
+@media (max-width: 991px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Хедер */
+    .header__menu {
+        gap: 20px;
+    }
+
+    /* Hero */
+    .hero__wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__bottom {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .hero__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero_btn {
+        width: 100%;
+    }
+
+    /* Блок "How it work" */
+    .work__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        text-align: center;
+    }
+
+    /* Футер */
+    .footer__top {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px 24px;
+        padding-bottom: 40px;
+    }
+
+    .footer__info {
+        grid-column: 1 / -1;
+    }
+}
+
+/* ===== Телефоны: до 575px ===== */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Хедер: меню на вторую строку */
+    .header__box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .header__menu {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    .header__menu a {
+        font-size: 14px;
+    }
+
+    .hero__title {
+        font-size: 32px;
+        line-height: 130%;
+    }
+
+    /* Футер: одна колонка */
+    .footer {
+        padding: 32px 0 24px;
+    }
+
+    .footer__top {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-bottom: 32px;
+    }
+
+    .footer__title {
+        margin-bottom: 12px;
+    }
+
+    .footer__bottom {
+        text-align: center;
+    }
+}
+
+/* ===== Маленькие телефоны: до 374px ===== */
+@media (max-width: 374px) {
+    .header__buttons button {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .hero__title {
+        font-size: 28px;
+    }
+}
